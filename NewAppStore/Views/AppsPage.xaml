@@ -108,7 +108,18 @@ CornerRadius="8,0,0,0">
             <Button Click="IVRFree_open">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/AppIcons/IviriusTextEditor.png" Height="64" Width="64"/>
-                    <TextBlock FontSize="16" FontWeight="SemiBold">Ivirius Text Editor Free</TextBlock>
+                    <StackPanel>
+                        <TextBlock FontSize="16" FontWeight="SemiBold">Ivirius Text Editor Free</TextBlock>
+                        <TextBlock>IVR Text Editor</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Button>
+            <Button Click="CertUtil_open">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/AppIcons/Certificate.png" Height="64" Width="64"/>
+                    <StackPanel>
+                        <TextBlock FontSize="16" FontWeight="SemiBold">Certificate Installer for MSIX</TextBlock>
+                    </StackPanel>
                 </StackPanel>
             </Button>
         </StackPanel>

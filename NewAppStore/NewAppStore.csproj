@@ -28,7 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Assets\AppIcons\Certificate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\AppsPage.xaml" />
+    <None Remove="Views\AppsPages\CertificateInstallerForMSIX.xaml" />
     <None Remove="Views\HomePage.xaml" />
     <None Remove="Views\LibraryPage.xaml" />
   </ItemGroup>
@@ -53,6 +58,11 @@
     <PackageReference Include="WinUICommunity.Core" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.LandingPages" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.Win2D" Version="6.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AppsPages\CertificateInstallerForMSIX.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\LibraryPage.xaml">

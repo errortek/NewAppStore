@@ -38,5 +38,10 @@ namespace NewAppStore.Views
         {
             Frame.Navigate(typeof(IVRFree));
         }
+
+        private void CertUtil_open(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CertificateInstallerForMSIX));
+        }
     }
 }

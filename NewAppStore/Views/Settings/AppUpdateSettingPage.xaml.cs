@@ -10,7 +10,7 @@ public sealed partial class AppUpdateSettingPage : Page
     public AppUpdateSettingPage()
     {
         this.InitializeComponent();
-        CurrentVersion = $"Current Version v{App.Current.AppVersion}";
+        CurrentVersion = $"Current version: v{App.Current.AppVersion}";
 
         TxtLastUpdateCheck.Text = Settings.LastUpdateCheck;
 
@@ -46,11 +46,11 @@ public sealed partial class AppUpdateSettingPage : Page
                     BtnReleaseNote.Visibility = Visibility.Visible;
                     BtnDownloadUpdate.Visibility = Visibility.Visible;
                     ChangeLog = update.Changelog;
-                    StatusCard.Header = $"We found a new version {update.TagName} Created at {update.CreatedAt} and Published at {update.PublishedAt}";
+                    StatusCard.Header = $"A new update of NewAppStore has been found! v{update.TagName}, created at {update.CreatedAt} and published at {update.PublishedAt}";
                 }
                 else
                 {
-                    StatusCard.Header = "You are using latest version";
+                    StatusCard.Header = "You are using the latest version";
                 }
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ public sealed partial class AppUpdateSettingPage : Page
         }
         else
         {
-            StatusCard.Header = "Error Connection";
+            StatusCard.Header = "Could not check for updates. Please make sure you have a stable Internet connection, then try again.";
         }
         PrgLoading.IsActive = false;
         BtnCheckUpdate.IsEnabled = true;
@@ -78,7 +78,7 @@ public sealed partial class AppUpdateSettingPage : Page
     {
         ContentDialog dialog = new ContentDialog()
         {
-            Title = "Release Note",
+            Title = "Release notes",
             CloseButtonText = "Close",
             Content = new ScrollViewer
             {

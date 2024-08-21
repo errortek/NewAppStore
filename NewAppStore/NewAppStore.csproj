@@ -29,6 +29,8 @@
 
   <ItemGroup>
     <Content Remove="Assets\AppIcons\Certificate.png" />
+    <Content Remove="Assets\icon.ico" />
+    <Content Remove="Assets\icon.png" />
   </ItemGroup>
 
   <ItemGroup>

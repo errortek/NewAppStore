@@ -31,12 +31,7 @@ namespace NewAppStore.Views.AppsPages
 
         public List<string> Pictures = new List<string>()
         {
-                        // CURRENTLY USES PLACEHOLDER LINKS!! CHANGE AFTER TESTING IS COMPLETE!!
-
-            "https://github.com/jpbandroid/AppStore-Resources/blob/main/IviriusTextEditorFree/Screenshot%202024-04-29%20070238.png?raw=true",
-            "https://github.com/jpbandroid/AppStore-Resources/blob/main/IviriusTextEditorFree/Screenshot%202024-04-29%20070256.png?raw=true",
-            "https://github.com/jpbandroid/AppStore-Resources/blob/main/IviriusTextEditorFree/Screenshot%202024-04-29%20070311.png?raw=true",
-            "https://github.com/jpbandroid/AppStore-Resources/blob/main/IviriusTextEditorFree/Screenshot%202024-04-29%20070330.png?raw=true"
+            "https://github.com/jpbandroid/AppStore-Resources/blob/main/CertificateInstallerForMSIX/Screenshot%202024-08-21%20202414.png?raw=true"
         };
 
         private async void download(object sender, RoutedEventArgs e)
@@ -44,8 +39,8 @@ namespace NewAppStore.Views.AppsPages
             // CURRENTLY USES PLACEHOLDER LINKS!! CHANGE AFTER TESTING IS COMPLETE!!
             string name = Environment.UserName;
             using var client = new HttpClient();
-            using var s = await client.GetStreamAsync("https://github.com/IviriusMain/Ivirius-Text-Editor/releases/download/3.0.3/Ivirius.Text.Editor_3.0.3.0_x86_x64_arm_arm64.msixbundle");
-            using var fs = new FileStream("C:\\Users\\" + name + "\\Downloads\\IviriusTextEditorFree.msixbundle", FileMode.OpenOrCreate);
+            using var s = await client.GetStreamAsync("https://github.com/jpbandroid/AppStore-Resources/raw/main/CertificateInstallerForMSIX/CertificateInstallerForMSIX.exe");
+            using var fs = new FileStream("C:\\Users\\" + name + "\\Downloads\\CertificateInstallerForMSIX.exe", FileMode.OpenOrCreate);
             await s.CopyToAsync(fs);
             new ToastContentBuilder()
                 .AddArgument("action", "viewConversation")

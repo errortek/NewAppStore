@@ -35,9 +35,8 @@ public sealed partial class AppUpdateSettingPage : Page
         {
             try
             {
-                //Todo: Fix UserName and Repo
-                string username = "";
-                string repo = "";
+                string username = "jpbandroid";
+                string repo = "NewAppStore";
                 TxtLastUpdateCheck.Text = DateTime.Now.ToShortDateString();
                 Settings.LastUpdateCheck = DateTime.Now.ToShortDateString();
                 var update = await UpdateHelper.CheckUpdateAsync(username, repo, new Version(App.Current.AppVersion));
@@ -71,7 +70,7 @@ public sealed partial class AppUpdateSettingPage : Page
     private async void GoToUpdateAsync()
     {
         //Todo: Change Uri
-        await Launcher.LaunchUriAsync(new Uri("https://github.com/WinUICommunity/WinUICommunity/releases"));
+        await Launcher.LaunchUriAsync(new Uri("https://github.com/jpbandroid/NewAppStore/releases"));
     }
 
     private async void GetReleaseNotesAsync()

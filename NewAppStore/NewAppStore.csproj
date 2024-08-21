@@ -48,7 +48,7 @@
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.WinUI.Notifications" Version="7.1.2" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240807006-preview1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240701003-experimental2" />
     <PackageReference Include="WinUICommunity.Components" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.Core" Version="6.9.0" />
     <PackageReference Include="WinUICommunity.LandingPages" Version="6.9.0" />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="NewAppStore.Views.HomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -6,10 +6,111 @@
     xmlns:local="using:NewAppStore.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
+        <FlipView SelectedIndex="0" Height="400">
+
+            <Border
+        Grid.Row="0"
+        Height="400"
+        CornerRadius="8,0,0,0">
+                <Border.Background>
+                    <ImageBrush Stretch="UniformToFill" />
+                </Border.Background>
+                <Border CornerRadius="8,0,0,0">
+                    <Border.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Offset="0" Color="#2F000000" />
+                            <GradientStop Offset="1" Color="#8F000000" />
+                        </RadialGradientBrush>
+                    </Border.Background>
+                    <StackPanel
+                Margin="16"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Background="Transparent">
+                        <TextBlock FontSize="18" Text="Coming soon" />
+                        <TextBlock
+                    FontSize="28"
+                    FontWeight="Bold"
+                    Text="Apps" />
+                        <TextBlock
+                    FontSize="18"
+                    Opacity=".8"
+                    Text="Apps. Applications." />
+                        <Button
+                    Height="36"
+                    Margin="0,6,0,0"
+                    Padding="30,6"
+                    HorizontalAlignment="Left"
+                    Background="Transparent"
+                    Content="Download Now" />
+                    </StackPanel>
+                </Border>
+            </Border>
+            <Border
+Grid.Row="0"
+Height="400"
+CornerRadius="8,0,0,0">
+                <Border.Background>
+                    <ImageBrush ImageSource="pack://application:,,,/AppStore-Logo.ico" Stretch="UniformToFill" />
+                </Border.Background>
+                <Border CornerRadius="8,0,0,0">
+                    <Border.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Offset="0" Color="#2F000000" />
+                            <GradientStop Offset="1" Color="#8F000000" />
+                        </RadialGradientBrush>
+                    </Border.Background>
+                    <StackPanel
+        Margin="16"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Center"
+        Background="Transparent">
+                        <TextBlock FontSize="18" Text="Coming soon" />
+                        <TextBlock
+            FontSize="28"
+            FontWeight="Bold"
+            Text="Apps" />
+                        <TextBlock
+            FontSize="18"
+            Opacity=".8"
+            Text="Apps. Applications." />
+                        <Button
+            Height="36"
+            Margin="0,6,0,0"
+            Padding="30,6"
+            HorizontalAlignment="Left"
+            Background="Transparent"
+            Content="Download Now" />
+                    </StackPanel>
+                </Border>
+            </Border>
+        </FlipView>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Padding="8">
+            <Button Click="UTEUWPPlus_open" Padding="15">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <Image Source="/Assets/AppIcons/uteuwp.png" Height="64" Width="64"/>
+                        <StackPanel>
+                            <TextBlock FontSize="16" FontWeight="SemiBold">UTE UWP+</TextBlock>
+                            <TextBlock>UltraTextEdit UWP Plus</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Button>
+            <Button Click="IVRFree_open">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/AppIcons/IviriusTextEditor.png" Height="64" Width="64"/>
+                    <TextBlock FontSize="16" FontWeight="SemiBold">Ivirius Text Editor Free</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

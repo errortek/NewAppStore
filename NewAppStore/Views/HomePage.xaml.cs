@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,6 +12,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using NewAppStore.Views.AppsPages;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -26,6 +27,16 @@ namespace NewAppStore.Views
         public HomePage()
         {
             this.InitializeComponent();
+        }
+
+        private void UTEUWPPlus_open(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UTEUWPPlus));
+        }
+
+        private void IVRFree_open(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(IVRFree));
         }
     }
 }

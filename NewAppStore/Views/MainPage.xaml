@@ -23,7 +23,7 @@
             PaneButtonClick="appTitleBar_PaneButtonClick"
             Subtitle="{x:Bind local:App.Current.AppVersion}">
             <wuc:TitleBar.Content>
-                <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" />
+                <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" TextChanged="AutoSuggestBox_TextChanged" SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>
             </wuc:TitleBar.Content>
             <wuc:TitleBar.Footer>
                 <Button

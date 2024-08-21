@@ -16,7 +16,7 @@
             <views:BreadcrumbBarUserControl SingleItem="{x:Bind BreadCrumbBarItemText, Mode=OneWay}" />
 
             <wuc:SettingsExpander
-                Description="Description"
+                Description="A modern app store designed using the Fluent Design Guidelines"
                 Header="NewAppStore"
                 HeaderIcon="{wuc:BitmapIcon Source=Assets/icon.png}"
                 IsExpanded="True">
@@ -29,8 +29,8 @@
                     <wuc:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">
                         <StackPanel Orientation="Vertical" Spacing="5">
                             <TextBlock Text="Related Links" />
-                            <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/WinUICommunity/WinUICommunity" />
-                            <HyperlinkButton Content="Release Notes" NavigateUri="https://github.com/WinUICommunity/WinUICommunity/releases" />
+                            <HyperlinkButton Content="Source code" NavigateUri="https://github.com/WinUICommunity/WinUICommunity" />
+                            <HyperlinkButton Content="Release notes" NavigateUri="https://github.com/WinUICommunity/WinUICommunity/releases" />
                         </StackPanel>
                     </wuc:SettingsCard>
                 </wuc:SettingsExpander.Items>

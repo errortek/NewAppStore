@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NewAppStore (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NewAppStore (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

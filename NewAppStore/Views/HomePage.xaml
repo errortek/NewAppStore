@@ -109,9 +109,10 @@ CornerRadius="8,0,0,0">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/AppIcons/IviriusTextEditor.png" Height="64" Width="64"/>
                 </StackPanel>
-                <TextBlock FontSize="16" FontWeight="SemiBold">Ivirius Text Editor Free</TextBlock>
+                <StackPanel>
+                    <TextBlock FontSize="16" FontWeight="SemiBold">Ivirius Text Editor Free</TextBlock>
                 <TextBlock>IVR Text Editor</TextBlock>
-        </StackPanel>
+                </StackPanel>
             </Button>
         </StackPanel>
     </Grid>
